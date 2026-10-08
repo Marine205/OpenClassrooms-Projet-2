@@ -19,15 +19,15 @@ Projet de formation OpenClassrooms : créer la page d'accueil d'une agence de vo
 
 ### Contraintes techniques
 
-| Règle | Détail |
-|---|---|
-| Langages autorisés | HTML et CSS uniquement |
-| Mise en page | Flexbox ou CSS Grid |
-| Approche | Desktop first |
-| Breakpoints | `>1024px` desktop · `≥768px` tablette · `<768px` mobile |
-| Largeur max | 1440px |
-| Validité | W3C HTML + CSS (0 erreur) |
-| Navigateurs | Chrome et Firefox (dernières versions) |
+| Règle              | Détail                                                  |
+| ------------------ | ------------------------------------------------------- |
+| Langages autorisés | HTML et CSS uniquement                                  |
+| Mise en page       | Flexbox ou CSS Grid                                     |
+| Approche           | Desktop first                                           |
+| Breakpoints        | `>1024px` desktop · `≥768px` tablette · `<768px` mobile |
+| Largeur max        | 1440px                                                  |
+| Validité           | W3C HTML + CSS (0 erreur)                               |
+| Navigateurs        | Chrome et Firefox (dernières versions)                  |
 
 ---
 
@@ -49,7 +49,7 @@ Ce repository inclut **Companion**, un assistant pédagogique configuré pour vo
 
 ### 1. Ouvrez le Chat Copilot
 
-Cliquez sur l'icône **Toggle Chat** à droite de la barre de recherche de commande. 
+Cliquez sur l'icône **Toggle Chat** à droite de la barre de recherche de commande.
 
 ### 2. Posez vos questions
 
@@ -92,11 +92,12 @@ Test-Booki-avec-Companion/
     ├── 06-specifications-techniques.agent.md
     └── 07-checklist-validation.agent.md
 ```
+
 ---
 
 ## 💡 Conseils pour bien démarrer
 
-1. **Lisez le code fourni** : la section *Les plus populaires* dans `index.html` est votre exemple de référence.
+1. **Lisez le code fourni** : la section _Les plus populaires_ dans `index.html` est votre exemple de référence.
 2. **Observez avant de coder** : comparez la maquette et le code existant avant d'écrire une seule ligne.
 3. **Avancez section par section** : Header → Recherche → Hébergements → Activités → Footer → Responsive.
 4. **Validez régulièrement** : utilisez le [validateur W3C HTML](https://validator.w3.org/) et [CSS](https://jigsaw.w3.org/css-validator/) tout au long du projet.
