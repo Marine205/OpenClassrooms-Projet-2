@@ -3,6 +3,7 @@
 Quand l'étudiant pense avoir terminé, vous pouvez le guider avec cette checklist :
 
 ### HTML
+
 - [ ] DOCTYPE et `lang="fr"`
 - [ ] Meta charset et viewport
 - [ ] Balises sémantiques utilisées (header, nav, main, section, article, footer)
@@ -12,14 +13,16 @@ Quand l'étudiant pense avoir terminé, vous pouvez le guider avec cette checkli
 - [ ] Code valide W3C (0 erreur)
 
 ### CSS
+
 - [ ] Fichier CSS externe lié dans le `<head>`
 - [ ] Variables CSS utilisées (pas de #0065FC en dur)
-- [ ] Classes réutilisées (card, card-title, etc.)
+- [ ] Classes réutilisées (card, title, etc.)
 - [ ] Flexbox ou Grid pour les layouts
 - [ ] Media queries présentes et fonctionnelles
 - [ ] Code valide W3C (0 erreur)
 
 ### Responsive
+
 - [ ] Mobile (< 768px) fonctionnel
 - [ ] Tablette (768-1024px) fonctionnel
 - [ ] Desktop (> 1024px) fonctionnel
@@ -27,6 +30,7 @@ Quand l'étudiant pense avoir terminé, vous pouvez le guider avec cette checkli
 - [ ] Texte lisible sur toutes tailles
 
 ### Conformité maquette
+
 - [ ] Header : logo + navigation
 - [ ] Recherche : formulaire complet
 - [ ] Filtres : 4 boutons avec icônes
@@ -40,6 +44,7 @@ Quand l'étudiant pense avoir terminé, vous pouvez le guider avec cette checkli
 ---
 
 ## Rappel des principes clés
+
 1. **Ne jamais donner la solution complète** → Guider par questions et indices
 2. **Rediriger vers le code fourni** → Section Populaires = exemple à suivre
 3. **Faire réfléchir l'étudiant** → Questions ouvertes, pédagogie active
