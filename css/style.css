@@ -19,6 +19,7 @@
 body {
   display: flex;
   justify-content: center;
+  gap: 30px;
 }
 main {
   gap: 35px;
@@ -34,7 +35,8 @@ h3 {
 .main-container {
   width: 100%;
   max-width: 1440px;
-  padding: 0 50px;
+  padding: 0px 50px 0 50px;
+  gap: 30px;
   box-sizing: border-box;
 }
 
@@ -61,22 +63,22 @@ section > h2.title {
 .neutral-star {
   color: var(--main-bg-color);
 }
-/*** Header et son contenu ***/
-
-header nav {
+/*** Nav bar ***/
+nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
   img {
-    width: 61px;
+    height: 79px;
     padding-top: 30px;
+    padding-bottom: 30px;
     gap: 10px;
   }
   ul {
     display: flex;
     list-style: none;
     gap: 68px;
-    padding-bottom: 20px;
+    padding-bottom: 40px;
     li {
       a {
         font-size: 16px;
@@ -92,8 +94,8 @@ header nav {
   }
 }
 
+/*** Header: search bar & filters ***/
 header {
-  gap: 35px;
   margin-bottom: 30px;
   h1 {
     font-size: 22px;
@@ -394,74 +396,69 @@ header {
 }
 
 /* Small devices (phones, less than 768px) */
-@media (max-width: 767.98px) {
-  header nav {
+@media (max-width: 768px) {
+  nav {
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    img {
-      justify-content: center;
-      margin: 30px 0px 30px 0px;
-      li {
-        justify-content: space-between;
-        gap: 15px;
-        a {
-          font-size: 16px;
-          display: block;
-          border-top: none;
-          border-bottom: solid 2px #fff;
-          padding-top: 20px;
-        }
-        a:hover {
-          color: #0065fc;
-          border-top-color: none;
-          border-bottom-color: #0065fc;
-        }
+    flex-direction: column;
+    justify-content: center;
+    li {
+      justify-content: space-between;
+      gap: 15px;
+      a {
+        font-size: 16px;
+        display: block;
+        border-top: solid 2px #fff;
+        border-bottom: solid 2px #fff;
       }
+      a:hover {
+        color: #0065fc;
+        border-top-color: #fff;
+        border-bottom-color: #0065fc;
+      }
+    }
+  }
+  .search-bar {
+    display: flex;
+    align-items: flex-start;
+    height: 50px;
+    margin-top: 35px;
+    span {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #f2f2f2;
+      border-radius: 15px 0px 0px 15px;
+      border: 1px;
+      height: 100%;
+      width: 50px;
+    }
+    input[type="search"] {
+      color: black;
+      font-weight: bold;
+      font-size: 18px;
+      padding: 0 15px;
+      border-top: 1px #f2f2f2 solid;
+      border-bottom: 1px #f2f2f2 solid;
+      border-left: none;
+      border-right: none;
+      box-sizing: border-box;
+      height: 100%;
+      &::placeholder {
+        color: currentColor;
+      }
+    }
+    input[type="submit"] {
+      background-color: url("/Users/gizmote/Documents/Openclassrooms/Formation Web - Projets/OpenClassrooms-Projet-2/images/searchicone/Button.png")
+        no-repeat center;
+      color: white;
+      font-size: 18px;
+      border-radius: 0px 15px 15px 0px;
+      border: 1px;
+      padding: 0 16px;
+      height: 100%;
+      cursor: pointer;
     }
   }
 }
 
-.search-bar {
-  display: flex;
-  align-items: flex-start;
-  height: 50px;
-  margin-top: 35px;
-  span {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #f2f2f2;
-    border-radius: 15px 0px 0px 15px;
-    border: 1px;
-    height: 100%;
-    width: 50px;
-  }
-  input[type="search"] {
-    color: black;
-    font-weight: bold;
-    font-size: 18px;
-    padding: 0 15px;
-    border-top: 1px #f2f2f2 solid;
-    border-bottom: 1px #f2f2f2 solid;
-    border-left: none;
-    border-right: none;
-    box-sizing: border-box;
-    height: 100%;
-    &::placeholder {
-      color: currentColor;
-    }
-  }
-  input[type="submit"] {
-    background-color: #0065fc;
-    font-weight: bold;
-    color: white;
-    font-size: 18px;
-    border-radius: 0px 15px 15px 0px;
-    border: 1px;
-    padding: 0 16px;
-    height: 100%;
-    cursor: pointer;
-  }
-}
 /* ... */
