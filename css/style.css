@@ -13,6 +13,7 @@
 }
 
 .fa-solid {
+  font-size: 22px;
   color: var(--main-color);
 }
 
@@ -84,8 +85,8 @@ header {
       display: flex;
       list-style: none;
       gap: 68px;
-      padding-bottom: 40px;
       li {
+        padding-bottom: 40px;
         a {
           font-size: 16px;
           display: block;
@@ -415,33 +416,58 @@ header {
 /* Small devices (phones, less than 768px) */
 @media (max-width: 768px) {
   .main-container {
-    width: 100%;
-    padding: 0px 50px 0 50px;
-    gap: 30px;
-    box-sizing: border-box;
+    padding: 0px 20px 0 20px;
   }
   header {
     nav {
+      flex-direction: column;
+      height: 115px;
+      ul {
+        gap: 15px;
+        height: 36px;
+        padding-bottom: 0px;
+        li {
+          display: inline-block;
+          width: 50%;
+          padding-bottom: 0px;
+        }
+        a {
+          border-bottom: solid 2px #fff;
+          padding: 0px;
+
+          a:hover {
+            border-bottom-color: #0065fc;
+          }
+        }
+      }
+    }
+    .header-text {
       display: flex;
       flex-direction: column;
-      justify-content: center;
-      img {
-        padding: 30px;
-      }
-      ul {
-        display: flex;
-        justify-content: space-between;
-        gap: 15px;
-        li {
-          justify-content: space-between;
-          gap: 15px;
-          a:hover {
-            color: #0065fc;
-          }
+      justify-content: flex-start;
+    }
+    .search-bar {
+      height: 49px;
+      width: 335px;
+    }
+    input[type="search"] {
+      font-size: 18px;
+    }
+    input[type="submit"] {
+      font-size: 14px;
+    }
+  }
+  .filter-menu {
+    .filter-btns {
+      flex-wrap: wrap;
+      gap: 10px;
+      .btn {
+        width: 162.5px;
+        justify-content: center;
+        i {
+          font-size: 14px;
         }
       }
     }
   }
 }
-
-/* ... */
