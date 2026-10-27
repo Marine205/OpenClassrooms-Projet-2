@@ -137,7 +137,7 @@ header {
       color: currentColor;
     }
   }
-  #txt-submit-btn {
+  .txt-submit-btn {
     background-color: #0065fc;
     font-weight: bold;
     color: white;
@@ -149,7 +149,7 @@ header {
     max-width: 132px;
     cursor: pointer;
   }
-  #icon-submit-btn {
+  .icon-submit-btn {
     display: none;
   }
 }
@@ -473,11 +473,11 @@ header {
       padding-right: 25px;
     }
 
-    #txt-submit-btn {
+    .txt-submit-btn {
       display: none; /*masque le bouton*/
     }
-    #icon-submit-btn {
-      display: inline-flex; /*affiche le bouton*/
+    .icon-submit-btn {
+      display: block;
       width: 49px;
       border-radius: 15px;
       border: none;
