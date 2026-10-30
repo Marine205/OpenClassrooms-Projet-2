@@ -203,6 +203,11 @@ header {
     align-content: center;
     font-size: 10px;
   }
+  p {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
 }
 
 /****** Accommodations And Popular ***********/
